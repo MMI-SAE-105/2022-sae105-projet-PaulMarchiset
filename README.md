@@ -1,6 +1,6 @@
-- NOM : 
-- PRÉNOM :
-- URL du site :
+- NOM : MARCHISET
+- PRÉNOM : PAUL
+- URL du site : random-things-anecdotes.paulmarchiset.me
 - URL FIGMA :
 
 # Structure de départ pour le projet individuel.

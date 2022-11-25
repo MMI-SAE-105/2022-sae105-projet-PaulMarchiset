@@ -1,0 +1,20 @@
+:root {
+
+    /* Color styles */
+    --jaune: rgba(255, 234, 0, 1);
+    --blanc-textes: rgba(255, 255, 255, 1);
+    --blanc-fond: rgba(242, 242, 242, 1);
+    --noir-fond: rgba(10, 9, 9, 1);
+    --noir-textes: rgba(0, 0, 0, 1);
+    
+    /* Text-size styles */
+    /* base size: texte-content (16px) */
+    --texte-content: 1rem;
+    --titrages: 1.25rem;
+    --titres: 1.88rem;
+    
+    /*Typography styles*/
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-roboto: 'Roboto', sans-serif;
+    
+    }
