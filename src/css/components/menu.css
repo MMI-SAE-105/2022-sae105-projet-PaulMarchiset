@@ -1,7 +1,9 @@
 .menu {
-    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background: var(--black);
@@ -9,3 +11,15 @@
     place-content: center;
     color: var(white);
   }
+
+.menu__language {
+    position: absolute;
+    top: 30px;
+    right: 84px;
+  }
+
+button {
+    position: absolute;
+    top: 33px;
+    right: 17px;
+}

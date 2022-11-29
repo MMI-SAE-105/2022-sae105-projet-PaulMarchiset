@@ -1,8 +1,15 @@
 body {
-    margin-top: 50px;
+    margin-top: 10px;
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.6;
     color: var(--blacktext);
-    padding: 15px;
+    padding: 64px 24px;
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+p {
+    text-align: left;
 }
