@@ -3,6 +3,8 @@
 - URL du site : random-things-anecdotes.paulmarchiset.me
 - URL FIGMA :
 
+Probléme avec commit réglé le 25/11 par Pierre Pracht. Pas pu faire commit avant.
+
 # Structure de départ pour le projet individuel.
 
 La structure de votre projet doit respecter scrupuleusement le modèle fourni dans ce dépôt (Repository).

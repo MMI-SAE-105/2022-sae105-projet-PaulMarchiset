@@ -1,11 +1,11 @@
 :root {
 
     /* Color styles */
-    --jaune: rgba(255, 234, 0, 1);
-    --blanc-textes: rgba(255, 255, 255, 1);
-    --blanc-fond: rgba(242, 242, 242, 1);
-    --noir-fond: rgba(10, 9, 9, 1);
-    --noir-textes: rgba(0, 0, 0, 1);
+    --yellow: rgba(255, 234, 0, 1);
+    --whitetext: rgba(255, 255, 255, 1);
+    --white: rgba(242, 242, 242, 1);
+    --black: rgba(10, 9, 9, 1);
+    --blacktext: rgba(0, 0, 0, 1);
     
     /* Text-size styles */
     /* base size: texte-content (16px) */
