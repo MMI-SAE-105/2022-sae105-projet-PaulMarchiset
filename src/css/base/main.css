@@ -4,8 +4,12 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: var(--blacktext);
-    padding: 64px 24px;
     text-align: center;
+}
+
+main {
+    padding: 64px 24px 0px 24px;
+    margin: 0;
 }
 
 li {
@@ -36,4 +40,9 @@ h2 {
     text-transform: capitalize;
     text-align: center;
     color: var(--blacktext);
+}
+
+article {
+    border-top: 295px;
+    border-top: 1.25px solid var(--blacktext);
 }

@@ -1,0 +1,7 @@
+footer {
+    background-color: var(--black);
+    height: 400px;
+    margin: 0;
+    padding: 24px;
+    content: center;
+}
