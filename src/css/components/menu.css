@@ -14,12 +14,18 @@
 
 .menu__language {
     position: absolute;
-    top: 30px;
-    right: 84px;
+    top: 25px;
+    right: 65px;
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--whitetext);
   }
 
 button {
     position: absolute;
     top: 33px;
     right: 17px;
+    display: flex;
+    align-items: end;
+    margin: 5px;
 }

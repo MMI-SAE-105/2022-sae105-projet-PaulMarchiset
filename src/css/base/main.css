@@ -7,9 +7,33 @@ body {
     padding: 64px 24px;
     text-align: center;
 }
+
 li {
     list-style: none;
 }
+
 p {
     text-align: left;
+    color: var(--blacktext);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--blacktext);
+}
+
+.p__article {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--blacktext);
 }
