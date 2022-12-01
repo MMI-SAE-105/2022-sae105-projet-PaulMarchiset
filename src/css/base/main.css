@@ -59,3 +59,8 @@ article {
     border-top: 295px;
     border-top: 1.25px solid var(--blacktext);
 }
+
+button {
+    border: none;
+    background: none;
+}

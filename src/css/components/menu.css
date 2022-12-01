@@ -27,7 +27,9 @@ button {
 }
 
 .menu__open {
-  margin: 0 0 auto auto;
+  margin: 0;
+  right: -12px;
+  top: -6px;
   position: relative;
   height: 24px;
   width: 40px;

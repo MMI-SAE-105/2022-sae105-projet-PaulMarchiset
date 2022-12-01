@@ -27,7 +27,7 @@
         aria-controls="mainNav"
         @click="menuIsOpen = ! menuIsOpen"
         class="header__menBtn">
-        <span></span>
+        <img class="menu__open" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
       </button>
       <nav
         id="mainNav"
@@ -38,7 +38,7 @@
         <ul>
           <div class="menu__top">
             <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-            <a href="/"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></a>
+            <button @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></button>
           </div>
           <li class="menu__overlay"><a href="/">Accueil</a></li>
           <li class="menu__overlay"><a href="/amsterdam.html">Amsterdam</a></li>
