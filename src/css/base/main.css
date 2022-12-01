@@ -28,6 +28,7 @@ p {
 }
 
 a {
+    color: var(--whitetext);
     text-decoration: none;
 }
 
