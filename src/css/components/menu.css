@@ -26,14 +26,20 @@ button {
     margin: 5px;
 }
 
+.menu__open {
+  margin: 0 0 auto auto;
+  position: relative;
+  height: 24px;
+  width: 40px;
+  
+
+}
+
 .menu__close {
   margin: auto 0 auto auto;
   width: 40px;
   height: 40px;
-}
-.menu__close a {
-  display: block;
-  margin: auto 0;
+
 }
 
 .menu__overlay {
