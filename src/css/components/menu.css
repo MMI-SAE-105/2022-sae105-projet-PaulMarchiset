@@ -4,11 +4,7 @@
     right: 0;
     bottom: 0;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
     background: var(--black);
-    display: grid;
-    place-content: center;
     color: var(white);
   }
 
@@ -49,4 +45,8 @@ button {
   width: 100px;
   height: 100px;
   margin: -10 auto;
+}
+
+nav {
+  margin: 0;
 }
