@@ -12,6 +12,14 @@ footer {
     color: var(--whitetext);
 }
 
+.p__footer h4 {
+    font-size: 18px;
+}
+
+.p__footer a {
+    text-decoration: underline;
+}
+
 .p__mail {
     font-size: 15px;
     font-weight: 400;
