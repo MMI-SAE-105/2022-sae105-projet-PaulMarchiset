@@ -35,6 +35,12 @@ a:hover {
     text-decoration: underline;
 }
 
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 h2 {
     text-transform: uppercase;
     color: var(--blacktext);

@@ -9,6 +9,7 @@
     , initial-scale=1.0"
     />
     <title>Random Things Anecdotes</title>
+    <link rel="icon" href="public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="src/css/style.css" />
     <script defer src="https://unpkg.com/alpinejs"></script>
   </head>
@@ -34,7 +35,9 @@
         x-transition.duration.800ms
         class="menu"
       >
-        <ul>
+        <ul
+          <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+          <a href="/"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></a>
           <li class="menu__overlay"><a href="/">Accueil</a></li>
           <li class="menu__overlay"><a href="/amsterdam.html">Amsterdam</a></li>
           <li class="menu__overlay">

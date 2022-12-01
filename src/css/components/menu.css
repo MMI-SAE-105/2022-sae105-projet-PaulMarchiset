@@ -29,3 +29,24 @@ button {
     align-items: end;
     margin: 5px;
 }
+
+.menu__close {
+  margin: auto 0 auto auto;
+  width: 40px;
+  height: 40px;
+}
+
+.menu__overlay {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: right;
+  border-bottom: 375px;
+  border-bottom: 1.25px solid var(--white);
+  padding: 0 26.5px;
+}
+
+.menu__icon {
+  width: 100px;
+  height: 100px;
+  margin: -10 auto;
+}
