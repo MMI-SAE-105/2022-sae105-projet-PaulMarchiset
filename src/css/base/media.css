@@ -6,6 +6,8 @@ img {
 }
 
 .imghome {
+    display: block;
+    margin: 0 auto;
     width: 323px;
     height: 204px;
 }
