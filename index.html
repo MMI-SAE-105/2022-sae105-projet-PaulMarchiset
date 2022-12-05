@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" scroll="no" style="overflow: hidden">
+<html lang="fr" x-data="{menuIsOpen: false}" :style="overflow: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +26,7 @@
       <button
         aria-controls="mainNav"
         @click="menuIsOpen = ! menuIsOpen"
-        class="header__menBtn">
+        ::class="menuIsOpen">
         <img class="menu__open" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
       </button>
       <nav
@@ -35,7 +35,7 @@
         x-transition.duration.800ms
         class="menu"
       >
-        <ul>
+        <ul class="menu__isopen">
           <div class="menu__top">
             <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
             <button @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></button>
