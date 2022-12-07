@@ -6,7 +6,29 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+.header__hamburger {
+    width: 74px;
+    height: 26px;
+  }
+
+.header__logo {
+  width: 96px;
+  height: 96px;
+}
+
+.header__language {
+  position: absolute;
+  top: 25px;
+  right: 69px;
+  font-size: 24px;
+  font-weight: normal;
+  color: var(--whitetext);
+}
 
 .header__main {
     display:flex;

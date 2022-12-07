@@ -1,14 +1,5 @@
-.menu__language {
-  position: absolute;
-  top: 25px;
-  right: 65px;
-  font-size: 24px;
-  font-weight: normal;
-  color: var(--whitetext);
-}
-
 button {
-  position: absolute;
+  position: relative;
   top: 33px;
   right: 17px;
   display: flex;
@@ -44,6 +35,7 @@ button {
 .menu__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100px;
 }
 
@@ -54,7 +46,7 @@ button {
 }
 
 .menu__close {
-  margin: -18px -16px auto auto;
+  margin: 0;
   width: 60px;
   height: 60px; 
 }
