@@ -9,7 +9,7 @@ body {
 
 main {
     padding: 64px 24px 0px 24px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
 }
 
 ul {
@@ -32,6 +32,11 @@ a {
     text-decoration: none;
 }
 
+p a {
+    color: var(--blacktext);
+    text-decoration: underline;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -45,6 +50,11 @@ h1 {
 h2 {
     text-transform: uppercase;
     color: var(--blacktext);
+}
+
+h5 {
+    font-size: 20px;
+    text-align: left;
 }
 
 .p__article {
