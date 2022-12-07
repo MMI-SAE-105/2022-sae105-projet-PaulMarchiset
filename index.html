@@ -16,29 +16,17 @@
   <body>
     <header>
       <a href="/">
-        <img
-          class="menuicon"
-          src="public/icons/RTA_logo.webp"
-          alt="Logo de RTA"
-        />
+          <img class="header__logo" src="public/icons/RTA_logo.webp" alt="Logo de RTA">
       </a>
-      <a class="menu__language" href="#" alt="Arrow Down">FR</a>
-      <button
-        aria-controls="mainNav"
-        @click="menuIsOpen = ! menuIsOpen"
-        ::class="menuIsOpen">
-        <img class="menu__open" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
-      </button>
-      <nav
-        id="mainNav"
-        x-show="menuIsOpen"
-        x-transition.duration.800ms
-        class="menu"
-      >
-        <ul class="menu__isopen">
+      <a class="header__language" href="#" alt="Arrow Down">FR</a>
+      <div @click="menuIsOpen = ! menuIsOpen">
+          <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+      </div>
+      <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+          <ul>
           <div class="menu__top">
-            <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-            <button @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></button>
+              <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+              <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
           </div>
           <li class="menu__overlay"><a href="/">Accueil</a></li>
           <li class="menu__overlay"><a href="/amsterdam.html">Amsterdam</a></li>
@@ -55,7 +43,7 @@
           <li class="menu__overlay"><a href="/jameswebb.html">Un espoir</a></li>
         </ul>
       </nav>
-    </header>
+  </header>
     <main>
       <h1>Random things Anecdotes ?</h1>
       <article>

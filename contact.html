@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>Contact - Random Things Anecdotes</title>
+    <link rel="icon" href="public/icons/RTA_logo.webp">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <header>
         <a href="/">
-            <img src="public/icons/RTA_logo.webp" alt="Logo de RTA">
+            <img class="header__logo" src="public/icons/RTA_logo.webp" alt="Logo de RTA">
         </a>
-        <a href="#" alt="Arrow Down"><img src="public/icons/arrow_down.svg" alt="arrow down">FR</a>
-        <button>
-            <span></span>
-        </button>
-        <nav>
+        <a class="header__language" href="#" alt="Arrow Down">FR</a>
+        <div @click="menuIsOpen = ! menuIsOpen">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+        </div>
+        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/amsterdam.html">Amsterdam</a></li>
-                <li><a href="/rostand.html">Pensées d'un biologiste</a></li>
-                <li><a href="/daftpunk.html">Veridis Quo</a></li>
-                <li><a href="/mlang.html">M le maudit</a></li>
-                <li><a href="/avortement.html">Un regret</a></li>
-                <li><a href="/jameswebb.html">Un espoir</a></li>
-            </ul>
+            <div class="menu__top">
+                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+            </div>
+            <li class="menu__overlay"><a href="/">Accueil</a></li>
+            <li class="menu__overlay"><a href="/amsterdam.html">Amsterdam</a></li>
+            <li class="menu__overlay">
+              <a href="/rostand.html">Pensées d'un biologiste</a>
+            </li>
+            <li class="menu__overlay">
+              <a href="/daftpunk.html">Veridis Quo</a>
+            </li>
+            <li class="menu__overlay"><a href="/mlang.html">M le maudit</a></li>
+            <li class="menu__overlay">
+              <a href="/avortement.html">Un regret</a>
+            </li>
+            <li class="menu__overlay"><a href="/jameswebb.html">Un espoir</a></li>
+          </ul>
         </nav>
     </header>
     <main>
@@ -50,20 +63,21 @@
         </form>
     </main>
     <footer>
-        <h4>&copy; Paul Marchiset</h4>
+        <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
         <ul>
-            <li><a href="/about.html">A propos</a></li>
+          <li><a class="p__footer" href="/about.html">A propos</a></li>
+          <li><a class="p__footer" href="/glossaire.html">Glossaire</a></li>
+          <li><a class="p__footer" href="/contact.html">Formulaire de Contact</a></li>
+          <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
         </ul>
-        <ul>
-            <li><a href="/glossaire.html">Glossaire</a></li>
-        </ul>
-        <ul>
-            <li><a href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
-        </ul>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département
-            <a href="http://mmimontbeliard.com">MMI de Montbéliard</a>
+        <p class="p__footer">
+          Projet réalisé dans le cadre d’un exercice pédagogique au département
+          <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
         </p>
-        <img src="public/icons/LOGO_MMI.svg" alt="logo du dpt MMI de Montbéliard">
-    </footer>
+        <img
+          class="icon__mmi"
+          src="public/icons/LOGO_MMI.svg"
+          alt="logo du dpt MMI de Montbéliard">
+      </footer>
 </body>
 </html>
