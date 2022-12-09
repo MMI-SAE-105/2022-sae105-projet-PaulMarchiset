@@ -63,6 +63,11 @@ h5 {
     text-align: left;
 }
 
+.noScroll,
+.noScroll body {
+    overflow: hidden;
+}
+
 .p__article {
     font-size: 20px;
     font-weight: 400;
@@ -113,4 +118,23 @@ button {
     font-size: 27px;
     font-weight: 700;
     text-align: center;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--blacktext);menuIsOpen
+    display: flex;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--blacktext);
+    background-color: var(--white);
+    color: var(--blacktext);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 100%;
 }
