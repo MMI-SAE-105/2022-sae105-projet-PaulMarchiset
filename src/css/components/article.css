@@ -1,0 +1,33 @@
+.shift__page {
+    display: flex;
+    justify-content: center;
+}
+
+.shift__page-white {
+    background-color: var(--whitetext);
+    color: var(--blacktext);
+    padding: 4px 50px; 
+    border-radius: 20px;   
+}
+
+.shift__page-black {
+    background-color: var(--blacktext);
+    color: var(--whitetext);
+    padding: 4px 50px;
+    border-radius: 20px;
+}
+
+.seealso__1 {
+    text-decoration: none;
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.seealso__2 {
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+}

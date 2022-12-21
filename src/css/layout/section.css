@@ -1,0 +1,12 @@
+.p__article {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--blacktext);
+}
+
+article {
+    border-top: 295px;
+    border-top: 1.25px solid var(--blacktext);
+}

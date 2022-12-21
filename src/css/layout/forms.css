@@ -1,0 +1,30 @@
+label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--blacktext);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--blacktext);
+    background-color: var(--white);
+    color: var(--blacktext);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 100%;
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid var(--blacktext);
+    background-color: var(--white);
+    color: var(--blacktext);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 100%;
+    height: 100px;
+}

@@ -1,8 +1,22 @@
+/*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&family=Roboto:wght@300;500;900&display=swap%27');
+
+/*normalize*/
 @import "vendors/normalize.css";
+
+/*variables*/
 @import "utils/variables.css";
+
+/*base*/
 @import "base/main.css";
 @import "base/media.css";
+
+/*layout*/
 @import "layout/header.css";
 @import "layout/footer.css";
+
+/*components*/
 @import "components/menu.css";
+@import "components/article.css";
+@import "components/section.css";
+@import "components/forms.css";
