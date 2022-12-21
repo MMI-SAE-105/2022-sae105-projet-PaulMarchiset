@@ -15,8 +15,8 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/forms.css";
+@import "layout/section.css";
 
 /*components*/
 @import "components/menu.css";
 @import "components/article.css";
-@import "components/section.css";
