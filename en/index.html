@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noScroll'">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
     <title>Random Things Anecdotes</title>
-    <link rel="icon" href="/public/icons/RTA_logo.webp">
+    <link rel="icon" href="/public/icons/RTA_logo.webp" />
     <link rel="stylesheet" href="../src/css/style.css" />
     <script defer src="https://unpkg.com/alpinejs"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="/">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="#" alt="Arrow Down">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
-        </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-            <div class="menu__top">
-                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+      <a href="/">
+        <img
+          class="header__logo"
+          src="/public/icons/RTA_logo.webp"
+          alt="Logo RTA"
+        />
+      </a>
+      <a class="header__language" href="../fr/index.html"
+        >FR</a
+      >
+      <div @click="menuIsOpen = ! menuIsOpen">
+        <img
+          class="header__hamburger"
+          src="/public/icons/hamburger_menu.svg"
+          alt="hamburger menu"
+        />
+      </div>
+      <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+          <div class="menu__top">
+            <a href="index.html"
+              ><img
+                class="menu__icon"
+                src="/public/icons/RTA_logo.webp"
+                alt="menu close"
+            /></a>
+            <div @click="menuIsOpen = ! menuIsOpen">
+              <img
+                class="menu__close"
+                src="/public/icons/close.svg"
+                alt="menu close"
+              />
             </div>
-            <li class="menu__overlay"><a href="/">Accueil</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Un regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
-          </ul>
-        </nav>
+          </div>
+          <li class="menu__overlay"><a href="index.html">Accueil</a></li>
+          <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+          <li class="menu__overlay">
+            <a href="rostand.html">Pensées d'un biologiste</a>
+          </li>
+          <li class="menu__overlay">
+            <a href="daftpunk.html">Veridis Quo</a>
+          </li>
+          <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+          <li class="menu__overlay">
+            <a href="avortement.html">Regret</a>
+          </li>
+          <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <h1>Random things Anecdotes ?</h1>
+      <h1>Random things Anecdotes?</h1>
       <article>
         <p class="p__home">
-          Ce site internet est une capsule temporelle des choses qui m’ont marqué
-          lors de l’année de mes 18 ans.
+          This website is a time capsule of the things that marked me during the
+          year I turned eighteen.
         </p>
         <p class="p__home">
-          Les articles écrits donnent des anecdotes historiques et culturelles
-          vous permettant de briller dans n’importe quelle situation.
+          The articles written give historical and cultural anecdotes that will
+          help you shine in any situation.
         </p>
       </article>
       <article class="article">
-        <a href="/amsterdam.html">
+        <a href="amsterdam.html">
           <h2>Amsterdam</h2>
           <img
             class="imghome"
             src="/public/img/amsterdam_home.webp"
-            alt="Amsterdam, canal, bateaux et beaux batiments"
+            alt="Amsterdam, canal, boats and pretty houses"
           />
-          <p class="p__article">Vélos, Satan et hurlements</p>
+          <p class="p__article">Bikes, Satan and screaming</p>
         </a>
       </article>
       <article class="article">
-        <a href="/rostand.html">
+        <a href="rostand.html">
           <h2>Pensées d'un biologiste</h2>
           <img
             class="imghome"
             src="/public/img/rostand_home.webp"
             alt="Rostand"
           />
-          <p class="p__article">Biologiste, philosophisme et philatelie</p>
+          <p class="p__article">Biologist, philosophism and philately</p>
         </a>
       </article>
       <article class="article">
@@ -83,12 +107,12 @@
             src="/public/img/daftpunk_home.webp"
             alt="Daft Punk"
           />
-          <p class="p__article">Latin, anime et boucle infinie</p>
+          <p class="p__article">Latin, anime and infinite loop</p>
         </a>
       </article>
       <article class="article">
         <a href="/mlang.html">
-          <h2>M le maudit</h2>
+          <h2></h2>
           <img
             class="imghome"
             src="/public/img/mlang_home.webp"
@@ -126,17 +150,26 @@
         <li><a class="p__footer" href="about.html">A propos</a></li>
         <li><a class="p__footer" href="projets.html">Autres Projets</a></li>
         <li><a class="p__footer" href="glossaire.html">Glossaire</a></li>
-        <li><a class="p__footer" href="contact.html">Formulaire de Contact</a></li>
-        <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
+        <li>
+          <a class="p__footer" href="contact.html">Formulaire de Contact</a>
+        </li>
+        <li>
+          <a class="p__mail" href="mailto:contact@paulmarchiset.me"
+            >Contact Mail</a
+          >
+        </li>
       </ul>
       <p class="p__footer">
         Projet réalisé dans le cadre d’un exercice pédagogique au département
-        <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
+        <a class="p__footer" href="http://mmimontbeliard.com"
+          >MMI de Montbéliard</a
+        >
       </p>
       <img
         class="icon__mmi"
         src="../public/icons/LOGO_MMI.svg"
-        alt="logo du dpt MMI de Montbéliard">
+        alt="logo du dpt MMI de Montbéliard"
+      />
     </footer>
-</body>
+  </body>
 </html>

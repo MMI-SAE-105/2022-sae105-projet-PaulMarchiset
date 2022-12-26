@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>James-Webb - Random Things Anecdotes</title>
+    <link rel="icon" href="/public/icons/RTA_logo.webp">
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+        </a>
+        <a class="header__language" href="#" alt="Arrow Down">FR</a>
+        <div @click="menuIsOpen = ! menuIsOpen">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+        </div>
+        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+            <div class="menu__top">
+                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+            </div>
+            <li class="menu__overlay"><a href="/">Accueil</a></li>
+            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+            <li class="menu__overlay">
+              <a href="rostand.html">Pensées d'un biologiste</a>
+            </li>
+            <li class="menu__overlay">
+              <a href="daftpunk.html">Veridis Quo</a>
+            </li>
+            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+            <li class="menu__overlay">
+              <a href="avortement.html">Un regret</a>
+            </li>
+            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>1989, histoire et nébuleuses</h3>
+        <img src="/public/img/jameswebb1_page.webp" alt="Photo de James-Webb de la nébuleuse de la Carène">
+        <p>En décembre 2021, le télescope spatial est envoyé à 1,5 millions de km de la Terre.</p>
+        <p>Ce télescope contrairement aux télescopes optiques terrestres comme GranTeCan ou l’observatoire W. M. Keck n’est pas perturbé par l’atmosphère terrestre et donc n’a pas de déformation des rayons lumineux.</p>
+        <p>Le 11 juillet 2022, la NASA reçoit la première image réalisée par le télescope après plus de 12h de pose et une utilisation de 6 filtres.</p>
+        <p>Quels seront donc toutes les découvertes et les apportées scientifiques que ces outils peuvent nous permettre ? Aurons-nous un jour la chance de comprendre comment tout à commencer et vers où nous nous dirigeons ? </p>
+        <img src="/public/img/jameswebb2_page.webp" alt="Photo de James-Webb des pilliers de la création">
+        <h5>1989</h5>
+        <p>Dès 1989, des études préalables sont réalisées dans le cadre d’un programme de télescope spatial qui doit être le successeur du télescope lancé l’année suivante : Hubble.</p>
+        <p>Le programme était prévu pour que James-Webb soit lancé en 2005.</p>
+        <p>Malheureusement, les problèmes techniques rencontrés avec Hubble et les réductions de budgets retardent beaucoup les études sur le télescope.</p>
+        <p>En 1995, les premières esquisses et vues d’artiste du télescope sont réalisées avec un miroir de 8m de diamètre, plus tard ce diamètre est ramené à 6m pour réduire le coût de l’appareil déjà hors-budget.</p>
+        <img src="/public/img/jameswebb3_page.webp" alt="Image du téléscope James-Webb">
+        <p>De 2001 à 2008, c’est la conception générale du télescope qui est produite. Le lanceur sera Ariane 5 (ESA). Le nom officiel du télescope est donné par la même occasion. La conception du télescope débute après cette phase.</p>
+        <p>En 2011, le miroir est terminé, 6 ans plus tard c’est tout l’appareil qui est achevé et les premiers tests sont réalisés.</p>
+        <p>Le tout dans l’objectif de rechercher les premières apparitions post-Big Bang.</p>
+        <h5>Histoire</h5>
+        <p>En 1608, un néerlandais du nom de Hans Lippershey décide de regarder à travers une combinaison appropriée de lentilles et décrit ce qu’il voit comme « on peut voir des choses lointaines comme si elles étaient près ».</p>
+        <p>Après lui, nombreux ont essayé sa méthode et en 1609, Galilée est le premier à utiliser cette invention pour observer le ciel et les étoiles.</p>
+        <p>Grâce à lui, on a pu découvrir les lunes de Jupiter, les cratères de notre lune ou encore voir que le soleil tournait sur lui-même.</p>
+        <img src="/public/img/jameswebb4_page.webp" alt="Illustration de Galilée avec sa lunette astronomique">
+        <p>En 1666, Isaac newton découvre quant à lui que les miroirs concaves renvoyaient mieux les rayons lumineux que les lunettes arrondis.</p>
+        <h5>Nébulseuses</h5>
+        <p>Avant 1920, le terme nébuleuse était utilisé à tort et à travers pour nommer des objets célestes à aspect diffus mais E. Hubble démontre que ces astres sont en réalité des galaxies mais vu avec les appareils de l’époque en mauvaise qualité.</p>
+        <p>Depuis, on a compris que les nébuleuses sont des objets célestes composé de gaz, plasma ou poussières.</p>
+        <img src="/public/img/jameswebb5_page.webp" alt="Photo d'une nébuleuse">
+        <p>Ces dernières ont un rôle majeur dans la naissance des étoiles.</p>
+        <p>Ces dernières, sous l’effet de la gravité peuvent former des systèmes d’étoiles ou, à partir d’une nébuleuse solaire, fabriquer un système avec un soleil comme le nôtre actuellement.</p>
+        <p>6 types de nébuleuses existent : nébuleuses planétaires, rémanents de supernova, bulles de Wolf-Rayet, régions HII, nébuleuses par réflexion et nébuleuses obscures.</p>
+    </main>
+    <footer>
+      <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
+      <ul>
+        <li><a class="p__footer" href="about.html">A propos</a></li>
+        <li><a class="p__footer" href="projets.html">Autres Projets</a></li>
+        <li><a class="p__footer" href="glossaire.html">Glossaire</a></li>
+        <li><a class="p__footer" href="contact.html">Formulaire de Contact</a></li>
+        <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
+      </ul>
+      <p class="p__footer">
+        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
+      </p>
+      <img
+        class="icon__mmi"
+        src="../public/icons/LOGO_MMI.svg"
+        alt="logo du dpt MMI de Montbéliard">
+    </footer>
+</body>
+</html>

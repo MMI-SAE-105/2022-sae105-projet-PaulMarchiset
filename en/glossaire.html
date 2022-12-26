@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Glossaire - Random Things Anecdotes</title>
+    <link rel="icon" href="/public/icons/RTA_logo.webp">
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+        </a>
+        <a class="header__language" href="#" alt="Arrow Down">FR</a>
+        <div @click="menuIsOpen = ! menuIsOpen">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+        </div>
+        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+            <div class="menu__top">
+                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+            </div>
+            <li class="menu__overlay"><a href="/">Accueil</a></li>
+            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+            <li class="menu__overlay">
+              <a href="rostand.html">Pensées d'un biologiste</a>
+            </li>
+            <li class="menu__overlay">
+              <a href="daftpunk.html">Veridis Quo</a>
+            </li>
+            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+            <li class="menu__overlay">
+              <a href="avortement.html">Un regret</a>
+            </li>
+            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <p><a href="https://fr.wiktionary.org/wiki/Amstellodamois">Amstellodamois :</a> vient de « Amstel » soit un canal néerlandais (passant par Amsterdam) et « dam » la digue en néerlandais</p> 
+
+
+        <p><a href="https://theaterencyclopedie.nl/wiki/Maarten_Lamers">Maarten Lamers :</a> Acteur amstellodamois né en 1947</p>
+
+
+        <p><a href="https://fr.wikipedia.org/wiki/Edmond_Rostand">Edmond Rostand :</a> écrivain français de la seconde moitié du XIXe siècle célèbre pour avoir écrit Cyrano de Bergerac </p>
+
+
+        <p><a href="https://fr.wikipedia.org/wiki/Mouvement_pour_le_désarmement,_la_paix_et_la_liberté">MDPL :</a> mouvement pour le désarmement, la paix et la liberté </p>
+ 
+
+        <p><a href="https://fr.wikipedia.org/wiki/Timbre_de_bienfaisance">Timbre de Bienfaisance :</a> timbre avec surtaxe pour œuvre de charité </p>
+
+
+        <p><a href="https://fr.wikipedia.org/wiki/Daft_Punk#Honneur">Daft Punk :</a> Duo de musique électronique français de 1993 à 2021 connu pour « Get Lucky » ou « One More Time » </p>
+ 
+
+        <p><a href="https://fr.wikipedia.org/wiki/Toei_Animation">Toei Animation :</a> studio d’animation japonaise ayant adapté notamment « Dragon Ball » ou encore « One Piece »  </p>
+
+        <p><a href="https://fr.wikipedia.org/wiki/Fritz_Lang#Réalisations">Fritz Lang :</a> réalisateur expressionniste austro-germano-américain du XXe siècle, considéré comme l’un des plus grands réalisateur et comme un incontournable du cinéma</p>
+
+
+        <p><a href="https://fr.wikipedia.org/wiki/Lumières_(philosophie)">Philosophie des Lumières :</a> courant de pensée européen en littérature et philosophie qui voulait l’éveil et s’extraire de l’obscurantisme </p>
+
+
+        <p><a href="https://fr.wikipedia.org/wiki/Lumières_(philosophie)">Faiseuses d’anges :</a> femme non médecin pratiquant l’avortement </p>
+
+
+        <p><a href="https://fr.wikipedia.org/wiki/Mésopotamie">Mésopotamie :</a> (antiquité) région situé au Moyen-Orient entre deux fleuves (Tigre et Euphrate) </p>
+
+
+        <p><a href="https://fr.wikipedia.org/wiki/Mésopotamie">GranTeCan :</a> le Gran Telescopio Canarias est un télescope de 10,4m de diamètre localisé sur l’ile de la palma à haute altitude. </p>
+ 
+
+        <p><a href="https://fr.wikipedia.org/wiki/Agence_spatiale_européenne">ESA :</a>  L’Agence Spatiale Européenne est une agence coordonnant les projets spatiaux de 22 Etats Européen</p> 
+
+        <p><a href="https://fr.wikipedia.org/wiki/Objet_céleste">Objets célestes :</a> objet quelconque de l’univers 	comme le Soleil, la Terre ou encore une Nébuleuse</p>
+    </main>
+    <footer>
+      <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
+      <ul>
+        <li><a class="p__footer" href="about.html">A propos</a></li>
+        <li><a class="p__footer" href="projets.html">Autres Projets</a></li>
+        <li><a class="p__footer" href="glossaire.html">Glossaire</a></li>
+        <li><a class="p__footer" href="contact.html">Formulaire de Contact</a></li>
+        <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
+      </ul>
+      <p class="p__footer">
+        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
+      </p>
+      <img
+        class="icon__mmi"
+        src="../public/icons/LOGO_MMI.svg"
+        alt="logo du dpt MMI de Montbéliard">
+    </footer>
+</body>
+</html>

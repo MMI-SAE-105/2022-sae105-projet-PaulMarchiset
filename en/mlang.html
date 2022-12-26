@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>M Le Maudit - Random Things Anecdotes</title>
+    <link rel="icon" href="/public/icons/RTA_logo.webp">
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+        </a>
+        <a class="header__language" href="#" alt="Arrow Down">FR</a>
+        <div @click="menuIsOpen = ! menuIsOpen">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+        </div>
+        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+            <div class="menu__top">
+                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+            </div>
+            <li class="menu__overlay"><a href="/">Accueil</a></li>
+            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+            <li class="menu__overlay">
+              <a href="rostand.html">Pensées d'un biologiste</a>
+            </li>
+            <li class="menu__overlay">
+              <a href="daftpunk.html">Veridis Quo</a>
+            </li>
+            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+            <li class="menu__overlay">
+              <a href="avortement.html">Un regret</a>
+            </li>
+            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="shif__page">
+        <a class="shift__page-black" href="mlang.html">Article</a>
+        <a class="shift__page-white" href="galerie.html">Galerie</a>
+      </div>
+        <h3>Peer-Gynt, rouleaux et acteurs</h3>
+        <img src="/public/img/mlang1_page.webp" alt="Première scène du film M le Maudit">
+        <p>M le maudit est un film allemand réalisé par Fritz Lang en 1931. Il s’agit de son premier film parlant (toujours en noir et blanc).</p>
+        <p>L’intrigue de ce film s’inspire de l’affaire Peter Kürten, dans les années 20, un tueur et violeur en série allemand de Düsseldorf, cette histoire raconte donc comment une ville va traquer et jusqu’où elle est prête à aller pour arrêter un pédophile et tueur en série d’enfant.</p>
+        <h5>Peer-Gynt</h5>
+        <p>Une musique revient souvent dans le film, elle est notamment sifflée. </p>
+        <p>Cette dernière est très connue et provient de la pièce de théâtre Peer Gynt réalisée en 1874 par un Norvégien, Edvard Grieg.</p>
+        <img src="/public/img/mlang2_page.webp" alt="Scène du film M le Maudit">
+        <p>Cette musique s’intitule “Dans l’antre du roi de la montagne” et s’apparente au moment où le héro Peer Gynt, jeune homme en quête d’amour et de péripétie.</p>
+        <p>Ayant fui son village, il se retrouve dans un milieu plein de gnomes, de trolls et autres monstres typiques de la mythologie nordique.</p>
+        <h5>Rouleaux</h5>
+        <p>A l’époque de Fritz Lang, les films étaient sur des bobines et à sa sortie, M le Maudit mesurait 3208 mètres pour une durée de 117 minutes, malheureusement des parties ont été perdue.</p>
+        <p>Cette version a, de plus, été censuré en 1934 par les nationals-socialistes.</p>
+        <img src="/public/img/mlang3_page.webp" alt="Photo de l'équipe de tournage lors d'une scène de M le Maudit">
+        <p>Après la guerre, il ne restait que 2693 mètres, mais cette version est sortie au cinéma. Il faut attendre 2001 pour qu’une version restaurée de 108 minutes sorte.</p>
+        <p>On retrouve ensuite, un peu partout, des parties du film et après réassemblage, une version finale de 3024 m pour 105 minutes sort mais après beaucoup de problèmes de format d’images.</p>
+        <p>C’est finalement en 2011 qu’une version de 111 minutes apparait à l’aide de copies françaises.</p>
+        <h5>Acteurs</h5>
+        <p>M le maudit étant le premier film parlant de Fritz Lang, il a du bien s’entouré pour trouver des acteurs pouvant jouer et s’exprimer en même temps.</p>
+        <img src="/public/img/mlang4_page.webp" alt="Scène de M le maudit, où le protagoniste se trouve face à la pègre">
+        <p>Il a pour ce fait, trouvé, des comédiens du théâtre dont Peter Lorre (le méchant du film) fait partie.</p>
+        <p>Ce film a permis à ce dernier, de lancer sa carrière et, quand il est parti de l’allemand nationale-socialiste vers les Etats-Unis, il avait déjà une réputation ce qui lui a permis de tourner dans de nombreux films dont « l’homme qui en savait trop » d’Alfred Hitchcock en 1934.</p>
+        <p>A la fin de M le maudit, lors de la scène du jugement ; Lang a, pour incarner les gens de la pègre, demandé à des vrais détenus sortis de prison pour l’occasion, de jouer dans son film. </p>
+    </main>
+    <footer>
+      <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
+      <ul>
+        <li><a class="p__footer" href="about.html">A propos</a></li>
+        <li><a class="p__footer" href="projets.html">Autres Projets</a></li>
+        <li><a class="p__footer" href="glossaire.html">Glossaire</a></li>
+        <li><a class="p__footer" href="contact.html">Formulaire de Contact</a></li>
+        <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
+      </ul>
+      <p class="p__footer">
+        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
+      </p>
+      <img
+        class="icon__mmi"
+        src="../public/icons/LOGO_MMI.svg"
+        alt="logo du dpt MMI de Montbéliard">
+    </footer>
+</body>
+</html>

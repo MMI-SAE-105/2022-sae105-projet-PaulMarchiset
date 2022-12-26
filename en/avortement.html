@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Un regret - Random Things Anecdotes</title>
+    <link rel="icon" href="/public/icons/RTA_logo.webp">
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+        </a>
+        <a class="header__language" href="#" alt="Arrow Down">FR</a>
+        <div @click="menuIsOpen = ! menuIsOpen">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+        </div>
+        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+            <div class="menu__top">
+                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+            </div>
+            <li class="menu__overlay"><a href="/">Accueil</a></li>
+            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+            <li class="menu__overlay">
+              <a href="rostand.html">Pensées d'un biologiste</a>
+            </li>
+            <li class="menu__overlay">
+              <a href="daftpunk.html">Veridis Quo</a>
+            </li>
+            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+            <li class="menu__overlay">
+              <a href="avortement.html">Un regret</a>
+            </li>
+            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>France et antiquité</h3>
+        <img src="/public/img/avortement1_page.webp" alt="Femme portant une affiche 'My body my choice'">
+        <p>L’IVG (interruption volontaire de grossesse) est une pratique médical courante et désignant la fin de grossesse pour des raisons non médicale. A l’inverse des IMG (interruption médicale de grossesse) et ITG (interruption thérapeutique de grossesse).</p>
+        <p>Dans les trois cas, on parle d’avortement. 
+            Mais avec les récents événements et discussions se déroulant actuellement dans le monde, n’est-il pas regrettable de revenir à d’anciennes lois alors que la médecine progresse et que les femmes s’émancipent. </p>
+        <h5>France</h5>
+        <p>Avant sa légalisation, et pendant très longtemps, l’IVG était interdite au départ à cause du christianisme religion très forte en France et les conséquences étaient très sévères à son sujet : peine de mort pour la femme et les personnes l’ayant aidé.</p>
+        <img src="/public/img/avortement2_page.webp" alt="Illustrations d'une faiseuse d'ange">
+        <p>Les philosophes des lumières ont permis de retirer cette peine. L’Etat a, quant à lui, changé cette loi seulement en 1810, condamnant tout de même les femmes à la peine de prison.</p>
+        <p>Plus tard, l’avortement thérapeutique est toléré par l’académie de médecine en 1852 bien que : « [l’avortement est] un crime contre l’ordre des familles et de la moralité publique ». Cet IMG étant uniquement pour sauver la vie de la mère.</p>
+        <p>Par la suite, début 1900, 500000 femmes auraient eu recourt à l’avortement et notamment grâce aux « faiseuses d’anges ».</p>
+        <p>Certains ont ensuite essayé de faire passer des lois pour « réprimer la provocation à l’avortement et la propagande anticonceptionnelle » (loi de 1920 : article 317) qui peut aussi se comprendre par la chute massive de la population du fait de la guerre 14-18. La contraception fut donc aussi considérée comme une façon d’avorter durant cette période.</p>
+        <img src="/public/img/avortement3_page.webp" alt="Photo de la déclaration de Simone Veil à l'assemblée en 1975">
+        <p>En 1942, avec le régime de Vichy l’avortement est déclaré comme un « crime contre la sureté de l’Etat » et est passible de peine de mort.</p>
+        <p>Finalement, avec les mouvements féministes des années 50, la modification du serment d’Hippocrate en 1966 pour légaliser l’avortement et d’autres faits durant cette période.</p>
+        <p>En 1975, sous le gouvernement Chirac 1, la ministre de la Santé : Simone Veil, parvient à faire passer la loi dépénalisant l’IVG. </p>
+        <h5>Antiquité</h5>
+        <p>Depuis très longtemps l’avortement est pratiqué et les plus anciennes traces qu’il nous reste nous viennent de Mésopotamie (peut-être était-il pratiqué avant) et selon le Code de Hammurabi : texte babylonien de -1750, l’avortement était interdit.</p>
+        <img src="/public/img/avortement4_page.webp" alt="Photo du code d'Hammurabi">
+        <p>Par ailleurs, vers -1600 en Egypte, le papyrus Ebers autorise les femmes sous certaines conditions à l’avortement.</p>
+        <p>En Grèce antique, les familles nombreuses n’étaient pas considérées comme idéale, les philosophes de l’époque considéraient l’avortement comme une bonne pratique pour garder une démographie constante.</p>
+        <p>Différentes techniques étaient partagées pour réaliser ce dernier.</p>
+    </main>
+    <footer>
+      <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
+      <ul>
+        <li><a class="p__footer" href="about.html">A propos</a></li>
+        <li><a class="p__footer" href="projets.html">Autres Projets</a></li>
+        <li><a class="p__footer" href="glossaire.html">Glossaire</a></li>
+        <li><a class="p__footer" href="contact.html">Formulaire de Contact</a></li>
+        <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
+      </ul>
+      <p class="p__footer">
+        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
+      </p>
+      <img
+        class="icon__mmi"
+        src="../public/icons/LOGO_MMI.svg"
+        alt="logo du dpt MMI de Montbéliard">
+    </footer>
+</body>
+</html>
