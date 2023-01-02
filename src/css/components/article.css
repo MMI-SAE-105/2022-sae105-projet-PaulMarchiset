@@ -29,55 +29,11 @@ h5 + p + img + p {
     gap: 5px;
 }
 
-.timeline {
-    list-style: none;
-    position: relative;
-    padding: 0;
-    margin: 0;
-  }
   
-  .timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 2px;
-    background: black;
-  }
   
-  .timeline > li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    position: relative;
-  }
   
-  .timeline > li::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: black;
-  }
   
-  .timeline > li > *:first-child {
-    display: flex;
-    align-items: center;
-    min-width: 80px;
-    font-weight: bold;
-    margin-right: 20px;
-  }
+
   
-  .timeline > li > *:nth-child(2) {
-    flex: 1;
-  }
   
-  .timeline > li > *:last-child {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-  }
+  
