@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>Filmography - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
@@ -13,16 +13,16 @@
 <body>
     <header>
         <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
         </a>
         <a class="header__language" href="../fr/galerie.html">FR</a>
         <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
         </div>
         <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
             </div>
             <ul>
             <li class="menu__overlay"><a href="index.html">Home</a></li>
@@ -35,16 +35,16 @@
             </li>
             <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
             <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
+              <a href="avortement.html">A Regret</a>
             </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
+            <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
           </ul>
         </nav>
     </header>
     <main>
         <div class="shif__page">
             <a class="shift__page-white" href="mlang.html">Article</a>
-            <a class="shift__page-black" href="galerie.html">Galerie</a>
+            <a class="shift__page-black" href="galerie.html">Filmography</a>
           </div>
         <h3>Galerie non-exhaustive de Fritz Lang</h3>
         <ul class="cartels">
@@ -52,25 +52,25 @@
                 <img src="/public/img/lang_1.webp" alt="Doktor Mabuse, der Spieler">
                 <p>Doktor Mabuse, der Spieler</p>
                 <p>1922</p>
-                <p>Allemagne</p>
+                <p>Germany</p>
             </li>
             <li>
                 <img src="/public/img/lang_2.webp" alt="Die Nibelungen">
                 <p>Die Nibelungen</p>
                 <p>1924</p>
-                <p>Allemagne</p>
+                <p>Germany</p>
             </li>
             <li>
                 <img src="/public/img/lang_3.webp" alt="Metropolis">
                 <p>Metropolis</p>
                 <p>1927</p>
-                <p>Allemagne</p>
+                <p>Germany</p>
             </li>
             <li>
                 <img src="/public/img/lang_4.webp" alt="Das Testament des Dr. Mabuse ">
                 <p>Das Testament des Dr. Mabuse</p>
                 <p>1933</p>
-                <p>Allemagne</p>
+                <p>Germany</p>
             </li>
             <li>
                 <img src="/public/img/lang_5.webp" alt="Fury">
@@ -130,7 +130,7 @@
                 <img src="/public/img/lang_14.webp" alt="Der Tiger von Eschnapur">
                 <p>Der Tiger von Eschnapur</p>
                 <p>1959</p>
-                <p>Allemagne</p>
+                <p>Germany</p>
             </li>
         </ul>
     </main>

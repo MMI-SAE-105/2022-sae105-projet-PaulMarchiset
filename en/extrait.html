@@ -5,63 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>Book Extract - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../fr/extrait.html">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
+    </a>
+    <a class="header__language" href="../fr/extrait.html">FR</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <ul>
-            <li class="menu__overlay"><a href="index.html">Home</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Home</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">A Regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
+      </ul>
+    </nav>
+</header>
     <main>
       <div class="shif__page">
         <a class="shift__page-white" href="rostand.html">Article</a>
         <a class="shift__page-black" href="extrait.html">Extrait</a>
       </div>
         <h3>Pensées d’un Biologsite, Jean Rostand</h3>
-        <h5>Résumé du livre</h5>
-        <p>« Pensées d’un biologiste » de Jean Rostand c’est avant tout une réflexion philosophique sur la vision du monde d’un scientifique, sur des thèmes divers et variés. De plus, c’est aussi de petites remarques qui peuvent nous faire réfléchir quant aux besoins des hommes à un moment donné.</p>
-        <h5>Extrait du livre</h5>
-        <p>« L’invention de la bombe atomique nous aura fait voir, du moins, ce que peut la recherche quand elle est mise en demeure. Les problèmes du cancer et de la tuberculose ne tarderaient guère d’avantage à être résolus s’il y avait pour un pays nécessité de les résoudre. Mais ils ont contre eux de n’intéresser que l’humanité entière.
-            L’homme, depuis des années, rêvait de libérer l’énergie incluse dans l’atome. A peine a-t-il réalisé son rêve qu’il gémit devant le péril : étions-nous donc assez naïfs de croire que, jusqu’au bout, nous allions jouer avec des couleurs sans danger ? 
-            Depuis la découverte de la désintégration atomique, l’humanité doit se résoudre à vivre sous menace de mort. Ce sentiment de létalité si fécond pour l’individu, pourquoi ne le serait-il pas aussi pour l’espèce ?
-            Science : la seule façon de servir les hommes sans se rendre complice de leurs passions.
-            Les méfaits du scientisme ? Possible – mais ceux du « philosophisme » ?
-            Ceux qui soutiennent que la science n’explique rien, l’ont voudrait qu’ils nous expliquassent une bonne fois ce que serait pour eux que d’expliquer
-            Il n’y a rien de consolant à tirer des incertitudes de la science.
-            Rêve, probabilité, certitude : trois états de la vérité scientifique. Mais comme ces corps qui passe directement de l’état gazeux à l’état solide, le rêve, quelquefois, se « sublime » en certitude sans même avoir traversé la phase du probable.
-            Il est toujours imprudent pour une croyance de faire son nid dans un coin obscur de la science.
-            Dans la science, quel repos de soi !
-            Je ne pense pas que les chercheurs aient beaucoup à redouter des contrôles ou des consignes. Nul n’est assez habile pour prévoir d’où peut venir l’inopportune vérité. »
-        </p>
+        <h5>Sum up of the book:</h5>
+        <p>« Pensées d’un biologiste » of Jean Rostand is a philosophical thought on the vision of the world of a scientist, on various and varied topics. Moreover, it is also small remarks which can make us think about the needs of the men at a given time.</p>
+        <h5>Extract of the book: </h5>
+        <p>"The invention of the atomic bomb will have shown us, at least, what research can do when it is put to the test. The problems of cancer and tuberculosis would not be long in being solved if any country had to solve them. But they have against them to interest only the whole humanity.
+          For years, man has dreamed of freeing the energy contained in the atom. No sooner has he realized his dream than he groans at the peril: were we naive enough to believe that we would play with colors without danger until the end? 
+          Since the discovery of the atomic disintegration, the humanity must resolve to live under threat of death. This feeling of lethality, so fertile for the individual, why should it not also be for the species?
+          Science: the only way to serve men without becoming an accomplice of their passions.
+          The misdeeds of scientism? Possibly - but those of "philosophism"?
+          Those who maintain that science does not explain anything, we would like them to explain finally what it would be for them to explain
+          There is nothing consoling to draw from the uncertainties of science.
+          Dream, probability, certainty: three states of scientific truth. But like those bodies which pass directly from the gaseous state to the solid state, the dream, sometimes, "sublimates" into certainty without having even crossed the phase of the probable.
+          It is always imprudent for a belief to make its nest in an obscure corner of science.
+          In science, what a rest from itself!
+          I do not think that researchers have much to fear from controls or instructions. No one is clever enough to foresee where the unwelcome truth may come from."</p>
     </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>

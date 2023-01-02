@@ -28,3 +28,8 @@ li a {
     text-decoration: underline;
     color: var(--blacktext);
 }
+
+nav li a {
+    text-decoration: none;
+    color: var(--whitetext);
+}

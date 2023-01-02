@@ -5,66 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>Veridis Quo - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../fr/daftpunk.html">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
+    </a>
+    <a class="header__language" href="../fr/daftpunk.html">FR</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <ul>
-            <li class="menu__overlay"><a href="index.html">Home</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Home</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">A Regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
+      </ul>
+    </nav>
+</header>
     <main>
       <div class="shift__page">
-        <a class="shift__page-white" href="daftpunk.html">Article</a>
-        <a class="shift__page-black" href="videodaftpunk.html">Video</a>
+        <a class="shift__page-black" href="daftpunk.html">Article</a>
+        <a class="shift__page-white" href="videodaftpunk.html">Video</a>
       </div>
-        <h3>Latin, anime et boucles infinies</h3>
-        <img src="/public/img/daftpunk1_page.webp" alt="Pochette de l'album Discovery des Daft Punk">
-        <p>Veridis Quo est le 11e titre du deuxième album des Daft Punk « Discovery » sorti en 2001. Souvent considéré comme le meilleur album des Daft Punk, c’est ce dernier qui les a fait connaître internationalement avec leur style électro un peu détaché mélangeant house, disco ou encore rock.
-        </p>
-        <h5>latin</h5>
-        <p>A la sortie de l’album beaucoup ont cru à une signification latine caché dans le titre Veridis Quo.</p>
-        <img src="/public/img/daftpunk2_page.webp" alt="Illustration des Daft Punk pour Veridis Quo">
-        <p>Mais en réalité il s’agit de faux latin bien qu’on peut y voir un jeu de mot avec « Quo Vadis » soit « où vas-tu ? » ou « dans quel but ? » ou encore si on cherche bien, pourrait provenir du verbe latin vereor : redouter alors veridis quo signifierait : à quel endroit redoutable.</p>
-        <p>Mais certain y voient simplement un jeu de mot avec discovery qu’on pourrait lire disco-very car veridis quo sonne comme veri-dis quo.Thématique de l’album considéré par beaucoup comme étant disco.</p>
-        <h5>Anime</h5>
-        <p>La sortie de l’album accompagne une production audiovisuelle : Interstella 5555 The 5tory of the 5ecret 5tar 5ystem, un film muet d’animation japonaise réalisé par Toei Animation.</p>
-        <p>Ce long métrage reprend les codes de l’animation japonaise de l’époque : décors en 2D, présence de plans fixes, personnages secondaires sans visages…</p>
-        <img src="/public/img/daftpunk3_page.webp" alt="Salle du grimoire tirée de l'anime Veridis Quo">
-        <p>Ce sont les Daft Punk eux-mêmes qui ont voulu cet anime ressemblant beaucoup aux animes qu’ils regardaient jeune.</p>
-        <p>Sur une planète extraterrestre, un groupe composé de 4 musiciens : Octave, le pianiste, Arpegius, le guitariste, Baryl, le batteur et Stella, la bassiste, jouèrent devant un public monstre lorsqu’une force militaire envahisse leur planète et kidnappèrent le groupe.</p>
-        <h5>Boucle infinie</h5>
-        <p>Ce 11e morceau est plutôt spécial car en plus de ne comporter aucune parole, il est une boucle infinie qui rajoute un nouvel élément musical toutes les 32 mesures ce qui donne un sentiment d’attente.</p>
+        <h3>Veridis Quo: Latin, movie, and infinite loop</h3>
+        <img src="/public/img/daftpunk1_page.webp" alt="Discovery album cover">
+        <p>Veridis Quo is the 11TH title of Daft Punk's second album "Discovery" released in 2001. Often considered as the best album of Daft Punk, it is this last one which made them known internationally with their electro style a little detached mixing house, disco, or rock.</p>
+        <h5>Quid est hoc titulo?</h5>
+        <p>When the album was released, many believed that the title Veridis Quo had a Latin meaning.</p>
+        <img src="/public/img/daftpunk2_page.webp" alt="Daft Punk's illustration for Veridis Quo">
+        <p>But it is false Latin although it can be seen as a pun with "Quo Vadis" or "where are you going" or "to what end" or if you look hard enough, it could come from the Latin verb vereor: to dread, then veridis quo would mean: to what dreadful place.</p>
+        <p>But some see it simply as a pun with discovery that could be read as disco-very because veridis quo sounds like veri-dis quo. Theme of the album considered by many as disco.</p>
+        <h5>The Story of the Secret Star System</h5>
+        <p>The release of the album accompanies an audiovisual production: Interstella 5555 The 5tory of the 5ecret 5tar 5ystem, a Japanese silent animation film made by Toei Animation.</p>
+        <p>This feature film uses the codes of Japanese animation of the time: 2D sets, presence of fixed shots, secondary characters without faces ...</p>
+        <img src="/public/img/daftpunk3_page.webp" alt="Picture from Interstella 5555">
+        <p>Daft Punk themselves wanted this anime to be remarkably like the anime they watched when they were young.</p>
+        <p>On an extraterrestrial planet, a band composed of four musicians: Octave, the pianist, Arpegius, the guitarist, Baryl, the drummer and Stella, the bassist, were playing to a monster audience when a military force invaded their planet and kidnapped the band.</p>
+        <h5>Infinity, infinity, infinity…</h5>
+        <p>This 11e piece is special because in addition to not having any words, it is an infinite loop that adds a new musical element every thirty-two bars which gives a feeling of expectation.</p>
         <img src="/public/img/daftpunk4_page.webp" alt="Illustration des Daft Punk pour Veridis Quo">
-        <p>Ce morceau en la mineur semble comme se répéter sans cesse : l’introduction est composée de deux parties qui vont se répéter en s’alternant ou non au fil de la musique.</p>
+        <p>This piece in A minor seems to repeat itself endlessly: the introduction is composed of two parts that will repeat themselves, alternating or not, throughout the music.</p>
     </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>

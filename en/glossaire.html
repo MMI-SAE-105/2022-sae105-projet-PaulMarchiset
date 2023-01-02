@@ -5,81 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>Glossary - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../fr/glossaire.html">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
+    </a>
+    <a class="header__language" href="../fr/glossaire.html">FR</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <ul>
-            <li class="menu__overlay"><a href="index.html">Home</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Home</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">A Regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
+      </ul>
+    </nav>
+</header>
     <main>
-        <p><a href="https://fr.wiktionary.org/wiki/Amstellodamois">Amstellodamois :</a> vient de « Amstel » soit un canal néerlandais (passant par Amsterdam) et « dam » la digue en néerlandais</p> 
+        <p><a href="https://en.wiktionary.org/wiki/Amsterdammer">Amsterdammer:</a> comes from "Amstel" which is a Dutch canal (passing through Amsterdam) and "dam" which is the dyke in Dutch</p> 
 
 
-        <p><a href="https://theaterencyclopedie.nl/wiki/Maarten_Lamers">Maarten Lamers :</a> Acteur amstellodamois né en 1947</p>
+        <p><a href="https://theaterencyclopedie.nl/wiki/Maarten_Lamers">Maarten Lamers:</a> Actor from Amsterdam born in 1947</p>
 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Edmond_Rostand">Edmond Rostand :</a> écrivain français de la seconde moitié du XIXe siècle célèbre pour avoir écrit Cyrano de Bergerac </p>
+        <p><a href="https://en.wikipedia.org/wiki/Edmond_Rostand">Edmond Rostand:</a> French writer from the second half of the 19th century, famous for having written Cyrano de Bergerac </p>
 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Mouvement_pour_le_désarmement,_la_paix_et_la_liberté">MDPL :</a> mouvement pour le désarmement, la paix et la liberté </p>
+        <p><a href="https://fr.wikipedia.org/wiki/Mouvement_pour_le_désarmement,_la_paix_et_la_liberté">MDPL:</a> movement for disarmament, peace and freedom </p>
  
 
-        <p><a href="https://fr.wikipedia.org/wiki/Timbre_de_bienfaisance">Timbre de Bienfaisance :</a> timbre avec surtaxe pour œuvre de charité </p>
+        <p><a href="https://en.wikipedia.org/wiki/Semi-postal_stamp ">Semi-postal stamp:</a> tamp with surtax for charity </p>
 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Daft_Punk#Honneur">Daft Punk :</a> Duo de musique électronique français de 1993 à 2021 connu pour « Get Lucky » ou « One More Time » </p>
+        <p><a href="https://en.wikipedia.org/wiki/Daft_Punk">Daft Punk:</a> French electronic music duo from 1993 to 2021 known for " Get Lucky " or " One More Time ".</p>
  
 
-        <p><a href="https://fr.wikipedia.org/wiki/Toei_Animation">Toei Animation :</a> studio d’animation japonaise ayant adapté notamment « Dragon Ball » ou encore « One Piece »  </p>
-
-        <p><a href="https://fr.wikipedia.org/wiki/Fritz_Lang#Réalisations">Fritz Lang :</a> réalisateur expressionniste austro-germano-américain du XXe siècle, considéré comme l’un des plus grands réalisateur et comme un incontournable du cinéma</p>
+        <p><a href="https://en.wikipedia.org/wiki/Toei_Animation">Toei Animation:</a> Japanese animation studio that has adapted "Dragon Ball" and "One Piece".</p>
 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Lumières_(philosophie)">Philosophie des Lumières :</a> courant de pensée européen en littérature et philosophie qui voulait l’éveil et s’extraire de l’obscurantisme </p>
+        <p><a href="https://en.wikipedia.org/wiki/Fritz_Lang">Fritz Lang:</a> Austrian-German-American expressionist director of the 20th century, considered as one of the greatest directors and as an essential of the cinema</p>
 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Lumières_(philosophie)">Faiseuses d’anges :</a> femme non médecin pratiquant l’avortement </p>
+        <p><a href="https://en.wikipedia.org/wiki/Lumières">Lumières:</a> European current of thought in literature and philosophy which wanted the awakening and to extract itself from the obscurantism </p>
 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Mésopotamie">Mésopotamie :</a> (antiquité) région situé au Moyen-Orient entre deux fleuves (Tigre et Euphrate) </p>
+        <p><a href="https://fr.wikipedia.org/wiki/Faiseuse_d%27anges">“faiseuses d’anges”:</a> non-doctor woman who performs abortions</p>
 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Mésopotamie">GranTeCan :</a> le Gran Telescopio Canarias est un télescope de 10,4m de diamètre localisé sur l’ile de la palma à haute altitude. </p>
+        <p><a href="https://en.wikipedia.org/wiki/Mesopotamia ">Mésopotamia:</a> (antiquity) region located in the Middle East between two rivers (Tigris and Euphrates)</p>
+
+
+        <p><a href="https://en.wikipedia.org/wiki/Gran_Telescopio_Canarias">GranTeCan:</a> the Gran Telescopio Canarias is a telescope of 10,4m diameter located on the island of la palma at high altitude.</p>
  
 
-        <p><a href="https://fr.wikipedia.org/wiki/Agence_spatiale_européenne">ESA :</a>  L’Agence Spatiale Européenne est une agence coordonnant les projets spatiaux de 22 Etats Européen</p> 
+        <p><a href="https://en.wikipedia.org/wiki/European_space_agency ">ESA :</a>  The European Space Agency is an agency coordinating the space projects of 22 European states</p> 
 
-        <p><a href="https://fr.wikipedia.org/wiki/Objet_céleste">Objets célestes :</a> objet quelconque de l’univers 	comme le Soleil, la Terre ou encore une Nébuleuse</p>
+
+        <p><a href="https://en.wikipedia.org/wiki/astronomical_objects">Astronomical objects :</a> any object of the universe like the Sun, the Earth, or a Nebula</p>
     </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
