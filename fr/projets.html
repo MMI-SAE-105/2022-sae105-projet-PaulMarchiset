@@ -44,48 +44,14 @@
     <main>
 <h3>Autres Projets</h3>
 <p>Vous trouverez ici des sites web réalisés par mes collègues d'étude</p>
-<ul x-data="{
-  data: [
-      {
-          nom: 'Adrien',
-          projet: 'just A Wayback',
-          url: 'https://just-a-wayback.adrienleveque.fr'
-      },
-      {
-          nom: 'Maxime',
-          projet: 'Capsul',
-          url: 'https://capsul.bessarion.fr'
-      },
-      {
-          nom: 'Thomas',
-          projet: 'Last Time',
-          url: 'https://last-time.thomaspoupon.fr'
-      }
-  ],
-}">
-<template x-for="obj of data">
-  <li>
-      <span x-text="obj.nom">nom</span> : 
-      <a x-bind:href="obj.url" x-text="obj.projet">projet</a>
-  </li>
-</template> 
-</ul>
-<ul>
-  <li><a href="https://www.alexandre-berthelot.fr">Timéo Binda : Reverse Footage</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Kylian Gartner : Changes</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Jules Houbron : Time Revenge</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Corentin Joaness : Friendship</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Khadidja Keffous : Road Map</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Arnaud Knaebel : My Destiny</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Minel Kujundzic : Bosnian Memory</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Noah Lafourcade : Time Capsule</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Maxime Legrand : Capsul</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Guillaume Le Trequesseur : Noirceur</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Adrien Lévêque : Just A Wayback</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Logan Martinez : Move On</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Hugo Paillard : A toi bien des années plus tard</a></li>
-  <li><a href="https://www.alexandre-berthelot.fr">Thomas Poupon : Last Time</a></li>
-</ul>
+<ul x-data="{ data: {} }" x-init="fetch('../src/JSON/data.json').then(response => response.json()).then(json => data = json)">
+  <template x-for="obj of data">
+    <li class="projects">
+        <span x-text="obj.nom">nom</span> : 
+        <a x-bind:href="obj.url" x-text="obj.projet">projet</a>
+    </li>
+  </template> 
+  </ul>
     </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>

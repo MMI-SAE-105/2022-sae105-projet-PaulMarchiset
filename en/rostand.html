@@ -5,68 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>Pensées d'un Biologiste - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../fr/rostand.html">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
+    </a>
+    <a class="header__language" href="../fr/rostand.html">FR</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <ul>
-            <li class="menu__overlay"><a href="index.html">Home</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Home</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">A Regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
+      </ul>
+    </nav>
+</header>
     <main>
-      <div class="shif__page">
+      <div class="shift__page">
         <a class="shift__page-black" href="rostand.html">Article</a>
-        <a class="shift__page-white" href="extrait.html">Extrait</a>
+        <a class="shift__page-white" href="extrait.html">Extract</a>
       </div>
-        <h3>Biologiste, philosophisme et philatélie</h3>
-        <img src="/public/img/rostand1_page.webp" alt="Première de couverture de Pensées d'un biologiste">
-        <h5>Biologiste</h5>
-        <p>Jean Rostand est un écrivain et biologiste français né en 1894 à Paris.</p>
-        <p>Il est fils d’<a href="glossaire.html">Edmond Rostand</a>. Dès son plus jeune âge, il s’intéresse aux animaux : notamment aux insectes. Plus tard, il se marie avec sa cousine et a un fils.</p>
-        <p>On lui doit notamment la section biologie du Palais de la découverte. Son intérêt pour comprendre les origines de la vie lui ont tenu tout au long de sa vie où il a réalisé de nombreuses recherches et expériences sur l’hérédité.</p>
-        <p>En 1954, il écrit Pensée d’un biologiste, recueil de ses pensées et constats. Il était, de plus, profondément pacifique (et féministe), il fut même président d’honneur du <a href="/glossaire.html">MDPL</a>.</p>
-        <img src="/public/img/rostand2_page.webp" alt="Illustration de Jean Rostand sur papier">
-        <p>Finalement, il est entré dans l’académie française en 1959 et est mort 18 ans plus tard en 1977.</p>
-        <h5>Philosophisme</h5>
-        <p>La philosophie rassemblait toutes les connaissances rationnelles de l’humanité durant l’antiquité (biologie, astronomie, littérature, mathématiques…).</p>
-        <p>Mais au fil des ans, le terme a bien évolué et aujourd’hui toutes les disciplines, toutes les connaissances sont leur propre domaine et sont bien séparées.</p>
-        <p>De nos jours, la philosophie se traduirait plutôt par une réflexion critique sur un thème problématique.</p>
-        <img src="/public/img/rostand3_page.webp" alt="Photo de Jean Rostand avec une grenouille dans les mains">
-        <p>Jean Rostand reprend, quant à lui, un autre thème en lien avec la philosophie : le philosophisme.</p>
-        <p>Ce dernier est une réflexion, une attitude philosophique qui est mauvaise voire dangereuse pour la religion ou pour l’ordre établie.</p>
-        <p>Le philosophiste est donc celui critiquant la religion en se basant sur la raison.</p>
-        <h5>Philatélie</h5>
-        <p>Le 21 février 1987, au côté des docteurs : Charles Richet, Eugène Jamot, Alexandre Yersin, Barnard Halpern et Jacques Monod.</p>
-        <p>Jean Rostand est représenté sur un <a href="glossaire.html">timbre de bienfaisance</a> dans une collection Personnages Célèbres avec ces derniers. </p>
-        <img src="/public/img/rostand4_page.webp" alt="Enveloppe avec timbre de bienfaisance en hommage à Jean Rostand">
+        <h3>Pensée d’un biologist: Biologist, philosophism, and philatelist</h3>
+        <img src="/public/img/rostand1_page.webp" alt="First page of the book">
+        <h5>The biology, all his life</h5>
+        <p>Jean Rostand is a French writer and biologist born in 1894 in Paris.</p>
+        <p>He is the son of Edmond Rostand. From an early age, he was interested in animals, especially insects. Later, he married his cousin and had a son.</p>
+        <p>He was responsible for the biology section of the “Palais de la découverte.” His interest in understanding the origins of life held him throughout his life where he conducted numerous research and experiments on heredity.</p>
+        <p>In 1954, he wrote “Pensées d'un biologiste”, a collection of his thoughts and observations. He was, moreover, profoundly pacifist (and feminist), he was even honorary president of the MDPL.</p>
+        <img src="/public/img/rostand2_page.webp" alt="Illustration of Jean Rostand">
+        <p>Finally, he entered the French Academy in 1959 and died 18 years later in 1977.</p>
+        <h5>Philosophism not philosophy </h5>
+        <p>Philosophy gathered all the rational knowledge of the humanity during the antiquity (biology, astronomy, literature, mathematics...).</p>
+        <p>But with the passing of years, the term evolved well and today all the disciplines, all the knowledge are their own domain and are well separated. </p>
+        <p>Nowadays, philosophy would rather mean a critical reflection on a problematic theme.</p>
+        <img src="/public/img/rostand3_page.webp" alt="Jean Rostand with a frog in his hands">
+        <p>Jean Rostand takes up, as for him, another theme in connection with philosophy: the philosophism.</p>
+        <p>The latter is a reflection, a philosophical attitude which is bad or even dangerous for religion or for the established order.</p>
+        <p>The philosopher is the one who criticizes religion in basing himself on the reason.</p>
+        <h5>Post stamp for biologist</h5>
+        <p>On February 21, 1987, alongside the doctors: Charles Richet, Eugène Jamot, Alexandre Yersin, Barnard Halpern, and Jacques Monod.</p>
+        <p>Jean Rostand is represented on a charity stamp in a collection of famous people with them.</p>
+        <img src="/public/img/rostand4_page.webp" alt="Post stamp for charity">
     </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>

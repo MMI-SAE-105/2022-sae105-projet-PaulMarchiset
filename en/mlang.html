@@ -5,70 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>M (1931) - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../fr/mlang.html">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
+    </a>
+    <a class="header__language" href="../fr/mlang.html">FR</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <ul>
-            <li class="menu__overlay"><a href="index.html">Home</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Home</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">A Regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
+      </ul>
+    </nav>
+</header>
     <main>
-      <div class="shif__page">
+      <div class="shift__page">
         <a class="shift__page-black" href="mlang.html">Article</a>
-        <a class="shift__page-white" href="galerie.html">Galerie</a>
+        <a class="shift__page-white" href="galerie.html">Filmography</a>
       </div>
-        <h3>Peer-Gynt, rouleaux et acteurs</h3>
-        <img src="/public/img/mlang1_page.webp" alt="Première scène du film M le Maudit">
-        <p>M le maudit est un film allemand réalisé par Fritz Lang en 1931. Il s’agit de son premier film parlant (toujours en noir et blanc).</p>
-        <p>L’intrigue de ce film s’inspire de l’affaire Peter Kürten, dans les années 20, un tueur et violeur en série allemand de Düsseldorf, cette histoire raconte donc comment une ville va traquer et jusqu’où elle est prête à aller pour arrêter un pédophile et tueur en série d’enfant.</p>
+        <h3>M: Peer-Gynt, rolls and actors</h3>
+        <img src="/public/img/mlang1_page.webp" alt="First sequence of the movie M">
+        <p>M is a German film directed by Fritz Lang in 1931. It is his first talking film (still in black and white). </p>
+        <p>The plot of this film is inspired by the case of Peter Kürten, in the 20's, a German serial killer and rapist from Düsseldorf, this story tells how a city will track down and how far it is willing to go to stop a pedophile and serial killer of children.</p>
         <h5>Peer-Gynt</h5>
-        <p>Une musique revient souvent dans le film, elle est notamment sifflée. </p>
-        <p>Cette dernière est très connue et provient de la pièce de théâtre Peer Gynt réalisée en 1874 par un Norvégien, Edvard Grieg.</p>
-        <img src="/public/img/mlang2_page.webp" alt="Scène du film M le Maudit">
-        <p>Cette musique s’intitule “Dans l’antre du roi de la montagne” et s’apparente au moment où le héro Peer Gynt, jeune homme en quête d’amour et de péripétie.</p>
-        <p>Ayant fui son village, il se retrouve dans un milieu plein de gnomes, de trolls et autres monstres typiques de la mythologie nordique.</p>
-        <h5>Rouleaux</h5>
-        <p>A l’époque de Fritz Lang, les films étaient sur des bobines et à sa sortie, M le Maudit mesurait 3208 mètres pour une durée de 117 minutes, malheureusement des parties ont été perdue.</p>
-        <p>Cette version a, de plus, été censuré en 1934 par les nationals-socialistes.</p>
-        <img src="/public/img/mlang3_page.webp" alt="Photo de l'équipe de tournage lors d'une scène de M le Maudit">
-        <p>Après la guerre, il ne restait que 2693 mètres, mais cette version est sortie au cinéma. Il faut attendre 2001 pour qu’une version restaurée de 108 minutes sorte.</p>
-        <p>On retrouve ensuite, un peu partout, des parties du film et après réassemblage, une version finale de 3024 m pour 105 minutes sort mais après beaucoup de problèmes de format d’images.</p>
-        <p>C’est finalement en 2011 qu’une version de 111 minutes apparait à l’aide de copies françaises.</p>
-        <h5>Acteurs</h5>
-        <p>M le maudit étant le premier film parlant de Fritz Lang, il a du bien s’entouré pour trouver des acteurs pouvant jouer et s’exprimer en même temps.</p>
-        <img src="/public/img/mlang4_page.webp" alt="Scène de M le maudit, où le protagoniste se trouve face à la pègre">
-        <p>Il a pour ce fait, trouvé, des comédiens du théâtre dont Peter Lorre (le méchant du film) fait partie.</p>
-        <p>Ce film a permis à ce dernier, de lancer sa carrière et, quand il est parti de l’allemand nationale-socialiste vers les Etats-Unis, il avait déjà une réputation ce qui lui a permis de tourner dans de nombreux films dont « l’homme qui en savait trop » d’Alfred Hitchcock en 1934.</p>
-        <p>A la fin de M le maudit, lors de la scène du jugement ; Lang a, pour incarner les gens de la pègre, demandé à des vrais détenus sortis de prison pour l’occasion, de jouer dans son film. </p>
+        <p>A music comes back often in the film, it is notably whistled. </p>
+        <p>This last one is very famous and comes from the play Peer Gynt realized in 1874 by a Norwegian, Edvard Grieg. </p>
+        <img src="/public/img/mlang2_page.webp" alt="A scene of the movie M">
+        <p>This music is entitled "In the den of the king of the mountain" and is similar to the moment when the hero Peer Gynt, a young man in search of love and adventure.</p>
+        <p>Having fled his village, he finds himself in an environment full of gnomes, trolls and other monsters typical of Nordic mythology</p>
+        <h5>Raids of the Lost Roll</h5>
+        <p>At the time of Fritz Lang, the films were on reels and at its release, M measured 3208 meters for a duration of 117 minutes, unfortunately parts were lost. </p>
+        <p>This version was, moreover, censored in 1934 by the Nazis.</p>
+        <img src="/public/img/mlang3_page.webp" alt="Photo of the film crew during a scene from M le Maudit">
+        <p>After the war, only 2693 meters remained, but this version was released in the cinema.</p>
+        <p>It was not until 2001 that a restored version of 108 minutes was released. We then find, a little bit apart, parts of the film and after reassembly, a definitive version of 3024 m for 105 minutes comes out but after many problems of image format.</p>
+        <p>It is finally in 2011 that a version of 111 minutes appears with the help of French copies.</p>
+        <h5>Who are these actors?</h5>
+        <p>M being the first talking film of Fritz Lang, he had to surround himself well to find actors who could play and express themselves at the same time. </p>
+        <img src="/public/img/mlang4_page.webp" alt="Scene from M le maudit, where the protagonist is facing the mob">
+        <p>He found actors from the theater, including Peter Lorre (the villain of the film).</p>
+        <p>This film allowed him to launch his career and, when he left the National Socialist German to the United States, he already had a reputation that allowed him to turn in many films including "The Man Who Knew Too Much" by Alfred Hitchcock in 1934.</p>
+        <p>At the end of M, during the judgement scene, Lang asked real inmates who had been released from prison for the occasion to play in his film to embody the underworld.</p>
     </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>

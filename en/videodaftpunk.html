@@ -7,44 +7,44 @@
     , initial-scale=1.0">
     <title>Music Clip - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../fr/videodaftpunk.html">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
+    </a>
+    <a class="header__language" href="../fr/videodaftpunk.html">FR</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-            <div class="menu__top">
-                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <li class="menu__overlay"><a href="/">Accueil</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Un regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Home</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">A Regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
+      </ul>
+    </nav>
+</header>
 <main>
       <div class="shift__page">
         <a class="shift__page-white" href="daftpunk.html">Article</a>
-        <a class="shift__page-black" href="videodaftpunk.html">Vidéo</a>
+        <a class="shift__page-black" href="videodaftpunk.html">Music Clip</a>
       </div>
 </main>
 <footer>

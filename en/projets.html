@@ -5,43 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>Random Things Anecdotes</title>
+    <title>Other Projects - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../fr/projets.html">FR</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
+    </a>
+    <a class="header__language" href="../fr/projets.html">FR</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <ul>
-            <li class="menu__overlay"><a href="index.html">Home</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
-          </ul>
-        </nav>
-    </header>
-    <main></main>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Home</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">A Regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
+      </ul>
+    </nav>
+</header>
+<main>
+<h3>Other Projects</h3>
+<p>You will find here websites produced by my co-workers</p>
+<ul x-data="{ data: {} }" x-init="fetch('../src/JSON/data.json').then(response => response.json()).then(json => data = json)">
+  <template x-for="obj of data">
+    <li class="projects">
+        <span x-text="obj.nom">nom</span> : 
+        <a x-bind:href="obj.url" x-text="obj.projet">projet</a>
+    </li>
+  </template> 
+  </ul>
+</main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
       <ul>
