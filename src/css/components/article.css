@@ -63,3 +63,8 @@
     top:28px;
     transition:.5s;
 }
+
+h5 + p + img + p {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}

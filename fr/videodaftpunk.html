@@ -7,40 +7,40 @@
     , initial-scale=1.0">
     <title>Clip Vidéo - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../en/videodaftpunk.html">EN</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+    </a>
+    <a class="header__language" href="../en/index.html">EN</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-            <div class="menu__top">
-                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <li class="menu__overlay"><a href="/">Accueil</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Un regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Accueil</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">Un regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+      </ul>
+    </nav>
+</header>
 <main>
       <div class="shift__page">
         <a class="shift__page-white" href="daftpunk.html">Article</a>
@@ -57,7 +57,7 @@
       <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
     </ul>
   <p class="p__footer">
-  Projet réalisé dans le cadre d’un exercice pédagogique au département
+  Projet réalisé dans le cadre d'un exercice pédagogique au département
   <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
   </p>
   <img

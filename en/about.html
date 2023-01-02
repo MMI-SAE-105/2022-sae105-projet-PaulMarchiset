@@ -13,16 +13,16 @@
 <body>
     <header>
         <a href="index.html">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="website logo">
         </a>
         <a class="header__language" href="../fr/about.html">FR</a>
         <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="menu open">
         </div>
         <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <div class="menu__top">
-                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
+                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="menu close"></a>
+                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="menu close"></div>
             </div>
             <ul>
             <li class="menu__overlay"><a href="index.html">Home</a></li>
@@ -35,9 +35,9 @@
             </li>
             <li class="menu__overlay"><a href="mlang.html">M (1931)</a></li>
             <li class="menu__overlay">
-              <a href="avortement.html">Regret</a>
+              <a href="avortement.html">A Regret</a>
             </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Hope</a></li>
+            <li class="menu__overlay"><a href="jameswebb.html">A Hope</a></li>
           </ul>
         </nav>
     </header>
@@ -45,7 +45,7 @@
         <h3>Welcome to RANDOM THINGS ANECDOTES!</h3>
         <p>I am Paul Marchiset, creator of this site for a study project.</p>
         <p>Here you can find articles about:</p>
-        <ul>
+        <ul class="about">
             <li>a place that impressed me by its diversity and tolerance</li>
             <li>a book that made me think</li>
             <li>a music that disturbed me</li>

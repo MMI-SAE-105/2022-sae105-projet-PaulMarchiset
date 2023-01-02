@@ -15,3 +15,16 @@ article {
     border-top: 295px;
     border-top: 1.25px solid var(--blacktext);
 }
+
+.about {
+    text-align: left;
+}
+
+.about li {
+    list-style: inside;
+}
+
+li a {
+    text-decoration: underline;
+    color: var(--blacktext);
+}

@@ -7,40 +7,40 @@
     , initial-scale=1.0">
     <title>Veridis Quo - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../en/daftpunk.html">EN</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+    </a>
+    <a class="header__language" href="../en/index.html">EN</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-            <div class="menu__top">
-                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <li class="menu__overlay"><a href="/">Accueil</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Un regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Accueil</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">Un regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+      </ul>
+    </nav>
+</header>
     <main>
       <div class="shift__page">
         <a class="shift__page-black" href="daftpunk.html">Article</a>
@@ -48,23 +48,23 @@
       </div>
         <h3>Latin, anime et boucles infinies</h3>
         <img src="/public/img/daftpunk1_page.webp" alt="Pochette de l'album Discovery des Daft Punk">
-        <p>Veridis Quo est le 11e titre du deuxième album des Daft Punk « Discovery » sorti en 2001. Souvent considéré comme le meilleur album des Daft Punk, c’est ce dernier qui les a fait connaître internationalement avec leur style électro un peu détaché mélangeant house, disco ou encore rock.
+        <p>Veridis Quo est le 11e titre du deuxième album des <a href="glossaire.html">Daft Punk</a> « Discovery » sorti en 2001. Souvent considéré comme le meilleur album des Daft Punk, c'est ce dernier qui les a fait connaître internationalement avec leur style électro un peu détaché mélangeant house, disco ou encore rock.
         </p>
         <h5>latin</h5>
-        <p>A la sortie de l’album beaucoup ont cru à une signification latine caché dans le titre Veridis Quo.</p>
+        <p>A la sortie de l'album beaucoup ont cru à une signification latine caché dans le titre Veridis Quo.</p>
         <img src="/public/img/daftpunk2_page.webp" alt="Illustration des Daft Punk pour Veridis Quo">
-        <p>Mais en réalité il s’agit de faux latin bien qu’on peut y voir un jeu de mot avec « Quo Vadis » soit « où vas-tu ? » ou « dans quel but ? » ou encore si on cherche bien, pourrait provenir du verbe latin vereor : redouter alors veridis quo signifierait : à quel endroit redoutable.</p>
-        <p>Mais certain y voient simplement un jeu de mot avec discovery qu’on pourrait lire disco-very car veridis quo sonne comme veri-dis quo.Thématique de l’album considéré par beaucoup comme étant disco.</p>
+        <p>Mais en réalité il s'agit de faux latin bien qu'on peut y voir un jeu de mot avec « Quo Vadis » soit « où vas-tu ? » ou « dans quel but ? » ou encore si on cherche bien, pourrait provenir du verbe latin vereor : redouter alors veridis quo signifierait : à quel endroit redoutable.</p>
+        <p>Mais certain y voient simplement un jeu de mot avec discovery qu'on pourrait lire disco-very car veridis quo sonne comme veri-dis quo.Thématique de l'album considéré par beaucoup comme étant disco.</p>
         <h5>Anime</h5>
-        <p>La sortie de l’album accompagne une production audiovisuelle : Interstella 5555 The 5tory of the 5ecret 5tar 5ystem, un film muet d’animation japonaise réalisé par Toei Animation.</p>
-        <p>Ce long métrage reprend les codes de l’animation japonaise de l’époque : décors en 2D, présence de plans fixes, personnages secondaires sans visages…</p>
+        <p>La sortie de l'album accompagne une production audiovisuelle : Interstella 5555 The 5tory of the 5ecret 5tar 5ystem, un film muet d'animation japonaise réalisé par <a href="glossaire.html">Toei Animation</a>.</p>
+        <p>Ce long métrage reprend les codes de l'animation japonaise de l'époque : décors en 2D, présence de plans fixes, personnages secondaires sans visages…</p>
         <img src="/public/img/daftpunk3_page.webp" alt="Salle du grimoire tirée de l'anime Veridis Quo">
-        <p>Ce sont les Daft Punk eux-mêmes qui ont voulu cet anime ressemblant beaucoup aux animes qu’ils regardaient jeune.</p>
-        <p>Sur une planète extraterrestre, un groupe composé de 4 musiciens : Octave, le pianiste, Arpegius, le guitariste, Baryl, le batteur et Stella, la bassiste, jouèrent devant un public monstre lorsqu’une force militaire envahisse leur planète et kidnappèrent le groupe.</p>
+        <p>Ce sont les Daft Punk eux-mêmes qui ont voulu cet anime ressemblant beaucoup aux animes qu'ils regardaient jeune.</p>
+        <p>Sur une planète extraterrestre, un groupe composé de 4 musiciens : Octave, le pianiste, Arpegius, le guitariste, Baryl, le batteur et Stella, la bassiste, jouèrent devant un public monstre lorsqu'une force militaire envahisse leur planète et kidnappèrent le groupe.</p>
         <h5>Boucle infinie</h5>
-        <p>Ce 11e morceau est plutôt spécial car en plus de ne comporter aucune parole, il est une boucle infinie qui rajoute un nouvel élément musical toutes les 32 mesures ce qui donne un sentiment d’attente.</p>
+        <p>Ce 11e morceau est plutôt spécial car en plus de ne comporter aucune parole, il est une boucle infinie qui rajoute un nouvel élément musical toutes les 32 mesures ce qui donne un sentiment d'attente.</p>
         <img src="/public/img/daftpunk4_page.webp" alt="Illustration des Daft Punk pour Veridis Quo">
-        <p>Ce morceau en la mineur semble comme se répéter sans cesse : l’introduction est composée de deux parties qui vont se répéter en s’alternant ou non au fil de la musique.</p>
+        <p>Ce morceau en la mineur semble comme se répéter sans cesse : l'introduction est composée de deux parties qui vont se répéter en s'alternant ou non au fil de la musique.</p>
     </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
@@ -76,7 +76,7 @@
         <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
       </ul>
       <p class="p__footer">
-        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        Projet réalisé dans le cadre d'un exercice pédagogique au département
         <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
       </p>
       <img

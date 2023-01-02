@@ -7,60 +7,60 @@
     , initial-scale=1.0">
     <title>Extrait - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../en/extrait.html">EN</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+    </a>
+    <a class="header__language" href="../en/index.html">EN</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-            <div class="menu__top">
-                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <li class="menu__overlay"><a href="/">Accueil</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Un regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
-          </ul>
-        </nav>
-    </header>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Accueil</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">Un regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+      </ul>
+    </nav>
+</header>
     <main>
       <div class="shif__page">
         <a class="shift__page-white" href="rostand.html">Article</a>
         <a class="shift__page-black" href="extrait.html">Extrait</a>
       </div>
-        <h3>Pensées d’un Biologsite, Jean Rostand</h3>
+        <h3>Pensées d'un Biologsite, Jean Rostand</h3>
         <h5>Résumé du livre</h5>
-        <p>« Pensées d’un biologiste » de Jean Rostand c’est avant tout une réflexion philosophique sur la vision du monde d’un scientifique, sur des thèmes divers et variés. De plus, c’est aussi de petites remarques qui peuvent nous faire réfléchir quant aux besoins des hommes à un moment donné.</p>
+        <p>« Pensées d'un biologiste » de Jean Rostand c'est avant tout une réflexion philosophique sur la vision du monde d'un scientifique, sur des thèmes divers et variés. De plus, c'est aussi de petites remarques qui peuvent nous faire réfléchir quant aux besoins des hommes à un moment donné.</p>
         <h5>Extrait du livre</h5>
-        <p>« L’invention de la bombe atomique nous aura fait voir, du moins, ce que peut la recherche quand elle est mise en demeure. Les problèmes du cancer et de la tuberculose ne tarderaient guère d’avantage à être résolus s’il y avait pour un pays nécessité de les résoudre. Mais ils ont contre eux de n’intéresser que l’humanité entière.
-            L’homme, depuis des années, rêvait de libérer l’énergie incluse dans l’atome. A peine a-t-il réalisé son rêve qu’il gémit devant le péril : étions-nous donc assez naïfs de croire que, jusqu’au bout, nous allions jouer avec des couleurs sans danger ? 
-            Depuis la découverte de la désintégration atomique, l’humanité doit se résoudre à vivre sous menace de mort. Ce sentiment de létalité si fécond pour l’individu, pourquoi ne le serait-il pas aussi pour l’espèce ?
+        <p>« L'invention de la bombe atomique nous aura fait voir, du moins, ce que peut la recherche quand elle est mise en demeure. Les problèmes du cancer et de la tuberculose ne tarderaient guère d'avantage à être résolus s'il y avait pour un pays nécessité de les résoudre. Mais ils ont contre eux de n'intéresser que l'humanité entière.
+            L'homme, depuis des années, rêvait de libérer l'énergie incluse dans l'atome. A peine a-t-il réalisé son rêve qu'il gémit devant le péril : étions-nous donc assez naïfs de croire que, jusqu'au bout, nous allions jouer avec des couleurs sans danger ? 
+            Depuis la découverte de la désintégration atomique, l'humanité doit se résoudre à vivre sous menace de mort. Ce sentiment de létalité si fécond pour l'individu, pourquoi ne le serait-il pas aussi pour l'espèce ?
             Science : la seule façon de servir les hommes sans se rendre complice de leurs passions.
             Les méfaits du scientisme ? Possible – mais ceux du « philosophisme » ?
-            Ceux qui soutiennent que la science n’explique rien, l’ont voudrait qu’ils nous expliquassent une bonne fois ce que serait pour eux que d’expliquer
-            Il n’y a rien de consolant à tirer des incertitudes de la science.
-            Rêve, probabilité, certitude : trois états de la vérité scientifique. Mais comme ces corps qui passe directement de l’état gazeux à l’état solide, le rêve, quelquefois, se « sublime » en certitude sans même avoir traversé la phase du probable.
+            Ceux qui soutiennent que la science n'explique rien, l'ont voudrait qu'ils nous expliquassent une bonne fois ce que serait pour eux que d'expliquer
+            Il n'y a rien de consolant à tirer des incertitudes de la science.
+            Rêve, probabilité, certitude : trois états de la vérité scientifique. Mais comme ces corps qui passe directement de l'état gazeux à l'état solide, le rêve, quelquefois, se « sublime » en certitude sans même avoir traversé la phase du probable.
             Il est toujours imprudent pour une croyance de faire son nid dans un coin obscur de la science.
             Dans la science, quel repos de soi !
-            Je ne pense pas que les chercheurs aient beaucoup à redouter des contrôles ou des consignes. Nul n’est assez habile pour prévoir d’où peut venir l’inopportune vérité. »
+            Je ne pense pas que les chercheurs aient beaucoup à redouter des contrôles ou des consignes. Nul n'est assez habile pour prévoir d'où peut venir l'inopportune vérité. »
         </p>
     </main>
     <footer>
@@ -73,7 +73,7 @@
         <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
       </ul>
       <p class="p__footer">
-        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        Projet réalisé dans le cadre d'un exercice pédagogique au département
         <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
       </p>
       <img

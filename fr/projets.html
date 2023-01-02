@@ -7,41 +7,86 @@
     , initial-scale=1.0">
     <title>Autres Projets - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
-        </a>
-        <a class="header__language" href="../en/projets.html">EN</a>
-        <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+  <header>
+    <a href="index.html">
+        <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
+    </a>
+    <a class="header__language" href="../en/index.html">EN</a>
+    <div @click="menuIsOpen = ! menuIsOpen">
+        <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
+    </div>
+    <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <div class="menu__top">
+            <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+            <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
         </div>
-        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
-            <div class="menu__top">
-                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
-                <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
-            </div>
-            <li class="menu__overlay"><a href="/">Accueil</a></li>
-            <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
-            <li class="menu__overlay">
-              <a href="rostand.html">Pensées d'un biologiste</a>
-            </li>
-            <li class="menu__overlay">
-              <a href="daftpunk.html">Veridis Quo</a>
-            </li>
-            <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
-            <li class="menu__overlay">
-              <a href="avortement.html">Un regret</a>
-            </li>
-            <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
-          </ul>
-        </nav>
-    </header>
-    <main></main>
+        <ul>
+        <li class="menu__overlay"><a href="index.html">Accueil</a></li>
+        <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
+        <li class="menu__overlay">
+          <a href="rostand.html">Pensées d'un biologiste</a>
+        </li>
+        <li class="menu__overlay">
+          <a href="daftpunk.html">Veridis Quo</a>
+        </li>
+        <li class="menu__overlay"><a href="mlang.html">M le maudit</a></li>
+        <li class="menu__overlay">
+          <a href="avortement.html">Un regret</a>
+        </li>
+        <li class="menu__overlay"><a href="jameswebb.html">Un espoir</a></li>
+      </ul>
+    </nav>
+</header>
+    <main>
+<h3>Autres Projets</h3>
+<p>Vous trouverez ici des sites web réalisés par mes collègues d'étude</p>
+<ul x-data="{
+  data: [
+      {
+          nom: 'Adrien',
+          projet: 'just A Wayback',
+          url: 'https://just-a-wayback.adrienleveque.fr'
+      },
+      {
+          nom: 'Maxime',
+          projet: 'Capsul',
+          url: 'https://capsul.bessarion.fr'
+      },
+      {
+          nom: 'Thomas',
+          projet: 'Last Time',
+          url: 'https://last-time.thomaspoupon.fr'
+      }
+  ],
+}">
+<template x-for="obj of data">
+  <li>
+      <span x-text="obj.nom">nom</span> : 
+      <a x-bind:href="obj.url" x-text="obj.projet">projet</a>
+  </li>
+</template> 
+</ul>
+<ul>
+  <li><a href="https://www.alexandre-berthelot.fr">Timéo Binda : Reverse Footage</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Kylian Gartner : Changes</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Jules Houbron : Time Revenge</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Corentin Joaness : Friendship</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Khadidja Keffous : Road Map</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Arnaud Knaebel : My Destiny</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Minel Kujundzic : Bosnian Memory</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Noah Lafourcade : Time Capsule</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Maxime Legrand : Capsul</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Guillaume Le Trequesseur : Noirceur</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Adrien Lévêque : Just A Wayback</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Logan Martinez : Move On</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Hugo Paillard : A toi bien des années plus tard</a></li>
+  <li><a href="https://www.alexandre-berthelot.fr">Thomas Poupon : Last Time</a></li>
+</ul>
+    </main>
     <footer>
       <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
       <ul>
@@ -52,7 +97,7 @@
         <li><a class="p__mail" href="mailto:contact@paulmarchiset.me">Contact Mail</a></li>
       </ul>
       <p class="p__footer">
-        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        Projet réalisé dans le cadre d'un exercice pédagogique au département
         <a class="p__footer" href="http://mmimontbeliard.com">MMI de Montbéliard</a>
       </p>
       <img
