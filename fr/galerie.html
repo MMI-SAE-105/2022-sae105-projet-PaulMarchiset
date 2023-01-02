@@ -7,25 +7,25 @@
     , initial-scale=1.0">
     <title>Galerie - Random Things Anecdotes</title>
     <link rel="icon" href="/public/icons/RTA_logo.webp">
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <header>
-        <a href="/">
+        <a href="index.html">
             <img class="header__logo" src="/public/icons/RTA_logo.webp" alt="Logo de RTA">
         </a>
-        <a class="header__language" href="../en/galerie.html">EN</a>
+        <a class="header__language" href="../en/index.html">EN</a>
         <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="">
+            <img class="header__hamburger" src="/public/icons/hamburger_menu.svg" alt="ouvrir le menu">
         </div>
         <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-            <ul>
             <div class="menu__top">
-                <a href="/"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
+                <a href="index.html"><img class="menu__icon" src="/public/icons/RTA_logo.webp" alt="fermer le menu"></a>
                 <div @click="menuIsOpen = ! menuIsOpen"><img class="menu__close" src="/public/icons/close.svg" alt="fermer le menu"></div>
             </div>
-            <li class="menu__overlay"><a href="/">Accueil</a></li>
+            <ul>
+            <li class="menu__overlay"><a href="index.html">Accueil</a></li>
             <li class="menu__overlay"><a href="amsterdam.html">Amsterdam</a></li>
             <li class="menu__overlay">
               <a href="rostand.html">Pensées d'un biologiste</a>
