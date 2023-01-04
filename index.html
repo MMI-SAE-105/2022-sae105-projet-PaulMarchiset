@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirection Page</title>
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>About - Random Things Anecdotes</title>
+    <link rel="icon" href="/public/icons/RTA_logo.webp">
+    <link rel="stylesheet" href="../src/css/style.css">
     <a href="fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'"></a>
+    <a href="en/index.html" onclick="document.cookie = 'nf_lang=en; path=/'"></a>
 </head>
 <body>
-    <a href="fr/index.html">Accueil en FR</a>
-    <a href="en/index.html">Accueil en EN</a>
+    <main class="homepage">
+        <div class="header">
+            <img src="/public/icons/RTA_logo.webp" alt="website logo">
+            <h1>Random Things Anecdotes</h1>
+        </div>
+        <div>
+            <a href="en/index.html">
+                <h2>in english</h2>
+                <p>click here -></p>
+            </a>
+        </div>
+        <div>
+            <a href="fr/index.html">
+                <h2>en français</h2>
+                <p>cliquez ici -></p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <h4 class="p__footer">&copy; Paul Marchiset - B1</h4>
+        <img
+        class="icon__mmi"
+        src="../public/icons/LOGO_MMI.svg"
+        alt="logo du dpt MMI de Montbéliard">
+    </footer>
 </body>
 </html>
