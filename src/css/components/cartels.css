@@ -14,17 +14,22 @@
     height: 195px;
 }
 
+.cartels li div {
+    display: flex;
+    flex-direction: column;
+}
+
 .cartels li p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     line-height: 1;
 }
 
-.cartels li p:nth-child(3n) {
+.cartels li p:nth-child(2n) {
     font-size: 1.2rem;
     font-weight: 500;
 }

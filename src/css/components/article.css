@@ -54,3 +54,7 @@ h5 + p + img + p {
 .timeline :last-child {
     padding-bottom: 20px;
 }
+
+video {
+    margin: 25px auto;
+}
