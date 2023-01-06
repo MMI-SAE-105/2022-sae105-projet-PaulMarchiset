@@ -47,6 +47,7 @@ nav li a {
 
 .homepage h2 {
     color: var(--whitetext);
+    margin-bottom: 5px;
 }
 
 .homepage p {
@@ -67,7 +68,12 @@ nav li a {
 }
 
 .homepage img {
+    position: relative;
     margin: auto;
-    width: 224px;
-    height: 224px;
+    width: 150px;
+    height: auto;
+}
+
+main.homepage + footer h4.p__footer {
+    margin: 0;
 }
