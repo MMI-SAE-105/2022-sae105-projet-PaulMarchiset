@@ -1,7 +1,7 @@
 - NOM : MARCHISET
 - PRÉNOM : PAUL
-- URL du site : random-things-anecdotes.paulmarchiset.me
-- URL FIGMA :
+- URL du site : https://random-things-anecdotes.paulmarchiset.me
+- URL FIGMA : https://www.figma.com/file/604xeMeXcpYuxUmtvPR0KV/Maquette-V2?node-id=0%3A1&t=m3N4roQCNdjeMvXy-1
 
 Probléme avec commit réglé le 25/11 par Pierre Pracht. Pas pu faire commit avant.
 
